@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Baper Bank</title>
+</head>
+
+<body>
+    <main>
+
+        <h1 class="text-center text-4xl py-14 ">Ready to calculate <span class="font-bold text-cyan-500">Mooooney</span>
+        </h1>
+
+        <section id="bankSec">
+            <div id="bankContainer"
+                class="w-3/4 mx-auto bg-cyan-100 p-20 flex items-center justify-center flex-col rounded-md text-white">
+
+                <div class="grid grid-cols-3 gap-4">
+                    <div class=" px-20 py-10 rounded-md bg-blue-600">
+                        <h4 class="text-2xl font-bold">Deposite</h4>
+                        <h3 class="text-3xl">$<span  id="diposites">00</span></h3>
+                    </div>
+                    <div class="bg-yellow-500 px-20 py-10 rounded-md">
+                        <h4 class="text-2xl font-bold">Widthdraw</h4>
+                        <h3 class="text-3xl">$<span   id="widthdraws">00</span></h3>
+                    </div>
+                    <div class="bg-violet-500 px-20 py-10 rounded-md">
+                        <h4 class="text-2xl font-bold" >Balance</h4>
+                        <h3 class="text-3xl">$<span  id="balance">5000</span></h3>
+                    </div>
+
+                </div>
+
+                <div class="grid grid-cols-2 gap-4 mt-8">
+                    <div class="bg-teal-400 w-3/9 px-20 py-14 rounded-md ">
+                        <h4 class="text-4xl font-bold text-white pb-4" >Deposite</h4>
+                        <div class="mx-auto">
+                            <input class=" text-black block block mb-5 p-1 text-xl rounded-md text-center w-full" type="number"
+                                name="depositeNum" id="depositeNum">
+                            <button
+                                class="bg-emerald-600 px-5 py-2  my-2 rounded-md font-bold text-white" id="depositeBtn">Deposite</button>
+                        </div>
+                    </div>
+                    <div class="bg-teal-400  px-20 py-14 rounded-md ">
+                        <h4 class="text-4xl font-bold text-white pb-4" >Widthdraw</h4>
+                        <div class="mx-auto">
+                            <input class=" text-black block mb-5 p-1 text-xl rounded-md text-center w-full" type="number"
+                                name="depositeNum" id="withdrawNum">
+                            <button class="bg-emerald-600 px-5 py-2  my-2 rounded-md font-bold text-white" id="withdrawBtn" >Widthdraw</button>
+                        </div>
+                    </div>
+
+
+                </div>
+
+                <button  class="bg-teal-400 px-5 py-2 mt-14 text-left rounded-md font-bold text-white" id="logOutBtn" >log out</button>
+            </div>
+
+
+        </section>
+    </main>
+
+
+
+
+    <script src="js/addition.js"></script>
+  
+</body>
+
+</html>
